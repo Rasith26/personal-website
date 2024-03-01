@@ -1,15 +1,11 @@
-import logo from './logo.svg';
+import background from "./Images/Background.png"
 import './App.css';
+import MainHome from "./Components/Home/Home.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This page is under Construction.
-        </p>
-      </header>
+    <div className="App background" style={{ backgroundImage: `url(${background})`}}>
+      <MainHome />
     </div>
   );
 }
