@@ -2,6 +2,10 @@
   margin: 0px;
 }
 
+.active {
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -17,11 +21,13 @@
 }
 
 .background{
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 400vh;
+  /* 100vh at the background to fill the screen with content */
+  min-height: 100vh;
   width: 100%;
+  z-index: -2;
 }
 
 .scrollspy-example {

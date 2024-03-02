@@ -1,11 +1,21 @@
-import background from "./Images/Background.png"
 import './App.css';
-import MainHome from "./Components/Home/Home.js"
+import { Route, Routes } from "react-router-dom";
+import Home from "./Components/pages/Home.js";
+import { About } from "./Components/pages/About.js";
+import { Projects } from "./Components/pages/Projects.js";
+import { Contact } from "./Components/pages/Contact.js";
+import Menu from "./Components/Menu.js";
 
 function App() {
   return (
-    <div className="App background" style={{ backgroundImage: `url(${background})`}}>
-      <MainHome />
+    <div className="App">
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
     </div>
   );
 }
