@@ -1,0 +1,48 @@
+
+
+div div.container-fluid {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+div div div.container {
+    margin: 20px 0;
+}
+
+div div div img {
+    width: 300px;
+    height: 300px;
+    transition: transform 2s;
+}
+
+div div div img:hover {
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
+}
+
+div div div h1 {
+    font-weight: bold;
+    text-align: start;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+div div div p {
+    text-align: start;
+    padding: 0 20px;
+    margin: 0;
+    text-indent: 10%;
+    font-size: large;
+    text-align: justify;
+}
+
+div div div p a:hover {
+    opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+    div div.container-fluid {
+        display: block;
+    }
+}

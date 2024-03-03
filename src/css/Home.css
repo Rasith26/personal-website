@@ -1,4 +1,36 @@
+section div.card {
+    transition: transform .2s;
+}
+section div h1 {
+    text-align: start;
+    margin: 20px;
+}
+  
+section div p {
+    text-align: justify;
+    text-indent: 20%;
+    font-size: 18px;
+    margin: 25px;
+}
+  
+section div div {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: auto;
+    border-radius: 10px;
+}
+  
+section div div:hover {
+    background-color: rgba(255,255,255,0.3);
+    color:#963232;
+}
 
+section div.card:hover {
+    box-shadow: 0px 0px 50px 12px black;
+    transform: scale(1.01);
+    opacity: 0.9;
+}
 
 
 

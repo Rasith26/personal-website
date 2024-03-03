@@ -2,7 +2,7 @@
   margin: 0px;
 }
 
-.active {
+nav div ul li a.active {
   color: white;
 }
 
@@ -34,4 +34,10 @@
   position: relative;
   height: 300px;
   overflow: auto;
+}
+
+
+
+
+@media (max-width: 400px) {
 }

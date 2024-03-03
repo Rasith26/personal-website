@@ -1,3 +1,5 @@
+FIXES:
+
 1.Background - image fix:
 .background{
   background-size: auto;
@@ -33,15 +35,42 @@
 *use react-router for multi-page webpage
 *install react-router-dom "npm i react-router-dom"
 *implement BrowserRouter above <App> element
-<BrowserRouter>
+<!-- <BrowserRouter>
   <App />
-</BrowserRouter>
+</BrowserRouter> -->
 *define routes for the pages
-<Routes>
+<!-- <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/about" element={<About />} />
   <Route path="/projects" element={<Projects />} />
   <Route path="/contact" element={<Contact />} />
-</Routes>
-*define <Link> / <NavLink> instead of <a> tag
-<NavLink to="/about">ABOUT</NavLink>
+</Routes> -->
+*define "Link" / "NavLink" instead of "a" tag
+<!-- <NavLink to="/about">ABOUT</NavLink> -->
+
+6.Navigate Hooks:
+*define Navigate using useNavigate() hook
+const navigate = useNavigate();
+*implement it in div onClick
+onClick={() => {
+  navigate("/NavigatePath");
+}}
+
+7.Zoom effect on Hover:
+section div.card {
+    transition: transform 2s;
+}
+section div.card:hover {
+    transform: scale(1.01);
+}
+
+
+BUGS:
+
+1.(.active) class in scrollspy not working:
+Bug: didn't apply .active class based on scroll value
+Reason: unknown
+
+2.sub-route(sub-page) got broke on page reload(netlify):
+Bug: didn't recognise the sub-page on reload on live website.
+Reason: didn't implement sub-route on netlify

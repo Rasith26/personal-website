@@ -8,7 +8,7 @@ import '../../css/Home.css'
 const Home = () => {
   return (
     <div class="App background d-flex flex-column min-vh-100" style={{ backgroundImage: `url(${background})`}}>
-      <Navbar />
+      <Navbar/>
       <Content />
       <Foot />
     </div>
