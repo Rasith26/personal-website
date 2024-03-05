@@ -64,6 +64,17 @@ section div.card:hover {
     transform: scale(1.01);
 }
 
+8.Disable Right Click(No Download):
+*define 'oncontextmenu="return false;"' in body tag
+
+9.Place div in bottom-right corner:
+*set it's left and top margin to auto
+section div div {
+    margin-top: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
 
 BUGS:
 

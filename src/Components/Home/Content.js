@@ -8,7 +8,7 @@ const Content = () => {
   return (
     <div>
         <section class="container-fluid text-white" style={{padding: "100px 20px"}}>
-            <div id="about" class="card btn bg-opacity-75 bg-black text-white rounded" 
+            <div id="about" class="card btn bg-black text-white rounded" 
             onClick={() => {
                 navigate("/about");
             }}>
@@ -36,7 +36,7 @@ const Content = () => {
             </div>
         </section>
         <section class="container-fluid" style={{padding:"100px 20px"}}>
-            <div id="project" class="card btn bg-opacity-75 bg-black text-white rounded"
+            <div id="project" class="card btn bg-black text-white rounded"
             onClick={() => {
                 navigate("/projects");
             }}>
@@ -51,7 +51,7 @@ const Content = () => {
             </div>
         </section>
         <section class="container-fluid text-white" style={{padding: "100px 20px"}}>
-            <div id="contact" class="card btn bg-opacity-75 bg-black text-white rounded"
+            <div id="contact" class="card btn bg-black text-white rounded"
             onClick={() => {
                 navigate("/contact");
             }}>

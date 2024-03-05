@@ -18,12 +18,13 @@ section div div {
     font-weight: bold;
     padding: 20px;
     margin-top: auto;
+    margin-left: auto;
     border-radius: 10px;
 }
   
 section div div:hover {
     background-color: rgba(255,255,255,0.3);
-    color:#963232;
+    color:rgba(9,67,214,0.7);
 }
 
 section div.card:hover {
