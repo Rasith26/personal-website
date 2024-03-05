@@ -75,6 +75,9 @@ section div div {
     border-radius: 10px;
 }
 
+10.center a div in bootstrap:
+*difine "d-flex align-items-center justify-content-center" in the container
+
 
 BUGS:
 
@@ -85,3 +88,8 @@ Reason: unknown
 2.sub-route(sub-page) got broke on page reload(netlify):
 Bug: didn't recognise the sub-page on reload on live website.
 Reason: didn't implement sub-route on netlify
+Solution: define redirect rules in netlify.toml file in root directory
+<!-- [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 -->

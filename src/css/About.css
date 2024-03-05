@@ -41,7 +41,7 @@ div div div p a:hover {
     opacity: 0.75;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     div div.container-fluid {
         display: block;
     }
