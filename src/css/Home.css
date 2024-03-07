@@ -1,5 +1,20 @@
+/* .active {
+    color: rgba(9,67,214,1);
+} */
+
+.con-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+}
+
 section div.card {
-    transition: transform .2s;
+    transition: transform 2s;
 }
 section div h1 {
     text-align: start;
@@ -28,9 +43,7 @@ section div div:hover {
 }
 
 section div.card:hover {
-    box-shadow: 0px 0px 50px 12px black;
     transform: scale(1.01);
-    opacity: 0.9;
 }
 
 

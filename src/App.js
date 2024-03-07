@@ -5,6 +5,7 @@ import { About } from "./Components/pages/About.js";
 import { Projects } from "./Components/pages/Projects.js";
 import { Contact } from "./Components/pages/Contact.js";
 import Menu from "./Components/Menu.js";
+import Foot from "./Components/Foot.js"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Foot />
     </div>
   );
 }

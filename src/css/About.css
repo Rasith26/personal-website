@@ -10,13 +10,13 @@ div div div.container {
     margin: 20px 0;
 }
 
-div div div img {
+div div div img.im {
     width: 300px;
     height: 300px;
     transition: transform 2s;
 }
 
-div div div img:hover {
+div div div img.im:hover {
     transform: scale(1.05);
     transform-origin: 50% 50%;
 }
@@ -39,6 +39,14 @@ div div div p {
 
 div div div p a:hover {
     opacity: 0.75;
+}
+
+.certificate-btn {
+    background-color: rgba(9,67,214,0.8);
+    border-radius: 10px;
+}
+.certificate-btn:hover {
+    background-color: rgba(9,67,214,0.7);
 }
 
 @media (max-width: 640px) {

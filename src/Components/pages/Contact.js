@@ -1,11 +1,14 @@
 import React from 'react'
-import Foot from '../Home/Foot'
+import '../../css/Contact.css'
+import Card from '../Contact/Card.js'
+import Message from '../Contact/Message.js'
+
 
 export const Contact = () => {
   return (
-    <div class="d-flex flex-column min-vh-100">
-      Contact
-      <Foot />
+    <div class="container-fluid con-f d-flex flex-column min-vh-100 p-0 mb-0">
+      <Card />
+      <Message />
     </div>
   )
 }
