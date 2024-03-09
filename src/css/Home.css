@@ -14,7 +14,8 @@
 }
 
 section div.card {
-    transition: transform 2s;
+    /* transition: transform 2s; */
+    border-radius: 5px;
 }
 section div h1 {
     text-align: start;
@@ -28,7 +29,7 @@ section div p {
     margin: 25px;
 }
   
-section div div {
+.know {
     font-size: 25px;
     font-weight: bold;
     padding: 20px;
@@ -37,14 +38,32 @@ section div div {
     border-radius: 10px;
 }
   
-section div div:hover {
+.know:hover {
     background-color: rgba(255,255,255,0.3);
     color:rgba(9,67,214,0.7);
 }
 
-section div.card:hover {
-    transform: scale(1.01);
+.contact-link {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 60px;
 }
+
+.contact-link:hover {
+    box-shadow: 0px 0px 10px 3px rgba(255,255,255,0.7);
+}
+
+.insta {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+/* section div.card:hover {
+    transform: scale(1.01);
+} */
 
 
 

@@ -1,8 +1,5 @@
 import React from 'react'
-import Childhood from '../../Images/Childhood.jpg'
-import School from '../../Images/School.jpg'
-import College from '../../Images/College.jpg'
-import Work from '../../Images/Work.jpg'
+import {Childhood, School, College, Work} from '../../Images'
 
 const Content = () => {
   return (
@@ -23,7 +20,7 @@ const Content = () => {
           </p>
         </div>
       </div>
-      <div class="container-fluid bg-black text-white py-3">
+      <div class="container-fluid bg-dark text-white py-3">
         <div class="container">
           <h1>Schooling</h1>
           <p>
@@ -51,7 +48,7 @@ const Content = () => {
           </p>
         </div>
       </div>
-      <div class="container-fluid bg-black text-white py-3">
+      <div class="container-fluid bg-dark text-white py-3">
         <div class="container">
           <h1>Work</h1>
           <p>

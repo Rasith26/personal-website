@@ -78,6 +78,12 @@ section div div {
 10.center a div in bootstrap:
 *difine "d-flex align-items-center justify-content-center" in the container
 
+11.carousel(slideshow) fade effect:
+*define "carousel-fade" in the top container's class
+
+12.carousel(slideshow) auto slide:
+*define "data-bs-ride="carousel"" in the top container(div tag)
+
 
 BUGS:
 
@@ -93,3 +99,21 @@ Solution: define redirect rules in netlify.toml file in root directory
   from = "/*"
   to = "/index.html"
   status = 200 -->
+2.1.page doesn't exist also renders
+Bug: render pages that doesn't exist
+Reason: redirecting every page after "/*" (defined single redirect rule)
+Solution: define redirect rule for every available pages
+
+3.didn't reset scroll position to top on component render:
+Bug: scroll position remains the same on new page render
+Reason: didn't reset scroll position to zero(Top)
+Solution: define a function component to reset scroll position
+<!-- const ScrollToTop = () => {
+  // Extracts pathname property(key) from an object
+  const { pathname } = useLocation();
+
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+} -->
