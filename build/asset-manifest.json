@@ -1,17 +1,42 @@
 {
   "files": {
-    "main.css": "/static/css/main.249fb9eb.css",
-    "main.js": "/static/js/main.69a6c752.js",
+    "main.css": "/static/css/main.566c41d2.css",
+    "main.js": "/static/js/main.7f4dc9e9.js",
+    "static/media/Project3.png": "/static/media/Project3.5159277dc57e08a5d270.png",
     "static/media/College.jpg": "/static/media/College.25f05c5c01a7f0146152.jpg",
+    "static/media/html.png": "/static/media/html.d4bc84ddf5a1a9ca6332.png",
+    "static/media/python.png": "/static/media/python.c44b9b809ebf766cbb4f.png",
     "static/media/Profile.jpg": "/static/media/Profile.208b4b7181d3eeff2c1b.jpg",
+    "static/media/postgreSQL.png": "/static/media/postgreSQL.98b6d24730c8aafcb714.png",
+    "static/media/Background.png": "/static/media/Background.cb26e31c77ea658476a1.png",
+    "static/media/Project1.jpg": "/static/media/Project1.f9a0fde1d884b7059f46.jpg",
+    "static/media/pandas.png": "/static/media/pandas.a2f9c4fa1cd97dc53c94.png",
     "static/media/School.jpg": "/static/media/School.35bce597f74389df2171.jpg",
+    "static/media/mitAppInventor.png": "/static/media/mitAppInventor.f177cd91bb07d88ef4a6.png",
+    "static/media/pythonIdle.png": "/static/media/pythonIdle.244c55970178d80ffc8f.png",
+    "static/media/ibm-cloud.png": "/static/media/ibm-cloud.2e53edfd7dcc4a2dcabd.png",
+    "static/media/Project2.png": "/static/media/Project2.93b0aa7c22d0a33ce80e.png",
+    "static/media/vs-code.png": "/static/media/vs-code.332d9b7dc873badbbcba.png",
+    "static/media/ibm-watson.png": "/static/media/ibm-watson.69703c23c10c1c912d6c.png",
+    "static/media/tensorflow.png": "/static/media/tensorflow.42ff285e754b23972de0.png",
+    "static/media/css.png": "/static/media/css.bee63b9e863f48d93bda.png",
+    "static/media/C++.png": "/static/media/C++.053a898d752aef72651e.png",
     "static/media/Work.jpg": "/static/media/Work.72d1bea346eb79a85bc9.jpg",
+    "static/media/nltk.png": "/static/media/nltk.86f8abc4aa0c0f5c7098.png",
+    "static/media/openWeather.png": "/static/media/openWeather.4595304db3173f1f94c5.png",
+    "static/media/anaconda.png": "/static/media/anaconda.638f0911c3354d52e47b.png",
+    "static/media/numpy.png": "/static/media/numpy.9eca1f7a4f09a8c742fd.png",
+    "static/media/php.png": "/static/media/php.bcbaac86a3d14be187f4.png",
+    "static/media/mysql.png": "/static/media/mysql.a04abbf76b39676bc4d9.png",
+    "static/media/ibm-iot.png": "/static/media/ibm-iot.f494bad72f53e25aef6d.png",
+    "static/media/tkinter.png": "/static/media/tkinter.a60e82a8ebf62e4d83af.png",
+    "static/media/json.png": "/static/media/json.92b65505235c45bbcf04.png",
     "index.html": "/index.html",
-    "main.249fb9eb.css.map": "/static/css/main.249fb9eb.css.map",
-    "main.69a6c752.js.map": "/static/js/main.69a6c752.js.map"
+    "main.566c41d2.css.map": "/static/css/main.566c41d2.css.map",
+    "main.7f4dc9e9.js.map": "/static/js/main.7f4dc9e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.249fb9eb.css",
-    "static/js/main.69a6c752.js"
+    "static/css/main.566c41d2.css",
+    "static/js/main.7f4dc9e9.js"
   ]
 }
