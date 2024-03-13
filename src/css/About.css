@@ -1,4 +1,6 @@
-
+*{
+    font-family: "Poppins", sans-serif;
+}
 
 div div.container-fluid {
     display: flex;

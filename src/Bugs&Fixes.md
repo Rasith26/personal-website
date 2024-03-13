@@ -1,3 +1,11 @@
+NOTES:
+
+1.Don't try to fix vulnerabilities(if you did):
+Solution: 
+i.install latest node version
+ii.delete node_modules and package-lock.json files and run "npm install"
+iii.run "npm audit fix --force"
+
 FIXES:
 
 1.Background - image fix:
@@ -84,6 +92,31 @@ section div div {
 12.carousel(slideshow) auto slide:
 *define "data-bs-ride="carousel"" in the top container(div tag)
 
+13.message me logic:
+*implement emailJS to sent mail to yourself
+<!-- const form = useRef();
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+    .sendForm('service_de6wnx8', 'template_9dq66to', form.current, {
+        publicKey: 'tmQsMcrvDl8wWqhZC',
+    })
+    .then(
+        () => {
+            console.log('SUCCESS!');
+            console.log('Email sent successfully!');
+            e.target.reset();
+            toast.success('Message sent!');
+        },
+        (error) => {
+            console.log('FAILED...', error.text);
+            toast.error('Problem occured!');
+        },
+    );
+}; -->
+
 
 BUGS:
 
@@ -117,3 +150,17 @@ Solution: define a function component to reset scroll position
     window.scrollTo(0, 0);
   }, [pathname]);
 } -->
+
+4.react toastify not closing automatically:
+Bug: toast message got stuck on screen
+Reason: <ToastContainer /> not defined properly
+Solution: define <ToastContainer /> at the bottom of the page(index.js) and define toast properties in <ToastContainer />
+<!-- <ToastContainer 
+  position='top-right' 
+  theme='dark' 
+  autoClose={3000} 
+  newestOnTop 
+  draggable 
+  closeOnClick 
+  transition={Bounce}
+/> -->

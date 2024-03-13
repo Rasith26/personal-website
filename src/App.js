@@ -6,7 +6,7 @@ import { Projects } from "./Components/pages/Projects.js";
 import { Contact } from "./Components/pages/Contact.js";
 import ScrollToTop from './Components/ScrollToTop.js';
 import Menu from "./Components/Menu.js";
-import Foot from "./Components/Foot.js"
+import Foot from "./Components/Foot.js";
 
 function App() {
   return (

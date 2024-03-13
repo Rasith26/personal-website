@@ -23,7 +23,14 @@ const Menu = () => {
   return (
     <div class="bg-black">
         <nav>
-            <Link to="/" className='title'>Mohamed Rasith</Link>
+            <Link to="/" className='title' onClick={() => {
+                if(menuOpen){
+                    setMenuOpen(!menuOpen)
+                    updateMenu()
+                }
+                }}>
+                    Mohamed Rasith
+            </Link>
             <div className={menu_class} onClick={() => {
                 setMenuOpen(!menuOpen)
                 updateMenu()
@@ -34,13 +41,25 @@ const Menu = () => {
             </div>
             <ul className={menuOpen ? "open" : "close"}>
                 <li>
-                    <NavLink to="/about">ABOUT</NavLink>
+                    <NavLink to="/about" onClick={() => {
+                        setMenuOpen(!menuOpen)
+                        updateMenu()}}>
+                            ABOUT
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects">PROJECTS</NavLink>
+                    <NavLink to="/projects" onClick={() => {
+                        setMenuOpen(!menuOpen)
+                        updateMenu()}}>
+                            PROJECTS
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">CONTACT</NavLink>
+                    <NavLink to="/contact" onClick={() => {
+                        setMenuOpen(!menuOpen)
+                        updateMenu()}}>
+                            CONTACT
+                    </NavLink>
                 </li>
             </ul>
         </nav>

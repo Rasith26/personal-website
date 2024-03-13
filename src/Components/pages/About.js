@@ -2,6 +2,7 @@ import React from 'react'
 import Skills from '../About/Skills.js'
 import Content from '../About/Content.js'
 import Certificates from '../About/Certificates.js'
+import BackToTop from '../BackToTop.js'
 import '../../css/About.css'
 
 
@@ -17,6 +18,7 @@ export const About = () => {
       <Content />
       <Skills />
       <Certificates />
+      <BackToTop />
     </div>
   )
 }

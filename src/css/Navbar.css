@@ -1,6 +1,11 @@
 .active {
     background-color: rgba(9,67,214,0.7);
 }
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-between;

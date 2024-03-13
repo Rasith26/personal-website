@@ -36,6 +36,26 @@ nav div ul li a.active {
   overflow: auto;
 }
 
+.backtotop {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  margin-top: auto;
+  color: rgba(9,67,214,0.8);
+  border-radius: 10px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.backtotop:hover {
+  background-color: rgba(255,255,255,0.3);;
+}
+
 /* ScrollBar*/
 /* width */
 ::-webkit-scrollbar {

@@ -1,7 +1,9 @@
 /* .active {
     color: rgba(9,67,214,1);
 } */
-
+*{
+    font-family: "Poppins", sans-serif;
+}
 .con-f {
     display: flex;
     justify-content: center;
@@ -13,16 +15,16 @@
     justify-content: center;
 }
 
-section div.card {
-    /* transition: transform 2s; */
+/* section div.card {
+    transition: transform 2s;
     border-radius: 5px;
-}
-section div h1 {
+} */
+.content-title {
     text-align: start;
     margin: 20px;
 }
   
-section div p {
+.content-msg {
     text-align: justify;
     text-indent: 20%;
     font-size: 18px;
@@ -41,6 +43,11 @@ section div p {
 .know:hover {
     background-color: rgba(255,255,255,0.3);
     color:rgba(9,67,214,0.7);
+    cursor: pointer;
+}
+
+.know-h:hover {
+    background-color: rgba(0,0,0,0.3);
 }
 
 .contact-link {
@@ -70,5 +77,13 @@ section div p {
 @media (max-width: 600px) {
     #nav-scroll{
         display: none;
+    }
+}
+@media (max-width: 400px) {
+    .content-title {
+        margin: 5px;
+    }
+    .content-msg {
+        margin: 10px;
     }
 }
