@@ -31,12 +31,14 @@ div div div h1 {
 }
 
 div div div p {
-    text-align: start;
     padding: 0 20px;
     margin: 0;
     text-indent: 10%;
     font-size: large;
     text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
 }
 
 div div div p a:hover {
@@ -49,6 +51,22 @@ div div div p a:hover {
 }
 .certificate-btn:hover {
     background-color: rgba(9,67,214,0.7);
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+[data-aos="anime"] {
+    display: none;
+}
+[data-aos="anime"].aos-animate {
+    animation: progress 3s ease-out forwards;
+    display: block;
 }
 
 @media (max-width: 640px) {

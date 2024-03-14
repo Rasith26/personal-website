@@ -7,8 +7,16 @@ import { Contact } from "./Components/pages/Contact.js";
 import ScrollToTop from './Components/ScrollToTop.js';
 import Menu from "./Components/Menu.js";
 import Foot from "./Components/Foot.js";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
+
   return (
     <div className="App">
       <ScrollToTop />

@@ -58,30 +58,30 @@ FIXES:
 
 6.Navigate Hooks:
 *define Navigate using useNavigate() hook
-const navigate = useNavigate();
+<!-- const navigate = useNavigate(); -->
 *implement it in div onClick
-onClick={() => {
+<!-- onClick={() => {
   navigate("/NavigatePath");
-}}
+}} -->
 
 7.Zoom effect on Hover:
-section div.card {
+<!-- section div.card {
     transition: transform 2s;
 }
 section div.card:hover {
     transform: scale(1.01);
-}
+} -->
 
 8.Disable Right Click(No Download):
 *define 'oncontextmenu="return false;"' in body tag
 
 9.Place div in bottom-right corner:
 *set it's left and top margin to auto
-section div div {
+<!-- section div div {
     margin-top: auto;
     margin-left: auto;
     border-radius: 10px;
-}
+} -->
 
 10.center a div in bootstrap:
 *difine "d-flex align-items-center justify-content-center" in the container
@@ -116,6 +116,56 @@ const sendEmail = (e) => {
         },
     );
 }; -->
+
+14.custom animation in AOS(Animate On Scroll):
+*define keyframes for the custom properties to be animated
+<!-- @keyframes progress {
+    0%{
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} -->
+*set display to none to avoid glitch on scroll back and forth(scroll up and down at the same time)
+<!-- [data-aos="anime"] {
+    display: none;
+} -->
+*define AOS custom animation and define the animation properties inside AOS custom animation 
+*set display to block to make it visible during animation to avoid glitches
+<!-- [data-aos="anime"].aos-animate {
+    animation: progress 2s ease-out forwards;
+    display: block;
+} -->
+
+AOS custom animation syntax:
+<!-- [data-aos="new-animation"] {
+    opacity: 0;
+    transition-property: opacity;
+}
+[data-aos="new-animation"].aos-animate {
+    opacity: 1;
+} -->
+
+15.make scroll to top buttom visible after some scroll:
+*toggle state after scroll value 1500 "window.scrollY > 1500"
+<!-- const [showTopBtn, setShowTopBtn] = useState(false);
+useEffect(() => {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 1500) {
+      setShowTopBtn(true);
+    } else {
+      setShowTopBtn(false);
+    }
+  });
+}, []); -->
+
+16.break words with hypens in justified text block:
+*define text-justify and hypens-auto
+<!-- text-align: justify;
+hyphens: auto;
+-webkit-hyphens: auto;
+word-spacing: -0.05em; -->
 
 
 BUGS:
@@ -164,3 +214,71 @@ Solution: define <ToastContainer /> at the bottom of the page(index.js) and defi
   closeOnClick 
   transition={Bounce}
 /> -->
+
+
+ANIMATIONS:
+
+1.Change text content:
+<!-- .animated-text span::before {
+  content: "Websites";
+  color: rgba(33, 95, 253, 1);
+  animation: words 6s infinite;
+}
+@keyframes words {
+  0%,50% {
+    content: "Websites";
+  }
+  51%,100% {
+    content: "Games";
+  }
+} -->
+
+2.text typing effect:
+<!-- .animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border: 2px solid rgba(33, 95, 253, 1);
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 0;
+  right: -8px;
+  animation: cursor .8s infinite, typing 6s infinite;
+  background-color: black;
+}
+@keyframes cursor {
+  to {
+    border: 2px solid rgba(33, 95, 253, 0);
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+}
+@keyframes typing {
+  25%,30%,75%,80%{
+    width: 0;
+  }
+  10%,50%,60%,100%{
+    width: calc(100% + 8px);
+  }
+} -->
+
+3.progess bar fill effect:
+<!-- @keyframes progress {
+    0%{
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} -->
+
+<!-- AOS custom animation -->
+<!-- [data-aos="anime"] {
+    display: none;
+}
+[data-aos="anime"].aos-animate {
+    animation: progress 3s ease-out forwards;
+    display: block;
+} -->

@@ -11,20 +11,20 @@ const Slides = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item slide-div active">
-            <img src={Project1} class="d-block slide-img" alt="Project1" />
+            <img src={Project1} class="d-block slide-img" alt="Project1" data-aos="zoom-out"/>
           </div>
           <div class="carousel-item slide-div">
-            <img src={Project2} class="d-block slide-img" alt="Project2" />
+            <img src={Project2} class="d-block slide-img" alt="Project2" data-aos="zoom-out"/>
           </div>
           <div class="carousel-item slide-div">
-            <img src={Project3} class="d-block slide-img" alt="Project3" />
+            <img src={Project3} class="d-block slide-img" alt="Project3" data-aos="zoom-out"/>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev" data-aos="fade">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next" data-aos="fade">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
