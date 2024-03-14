@@ -94,13 +94,13 @@ const Content = () => {
             <br/>
             <div class="container m-auto">
                 <div class="row">
-                    <div class="col-sm-6 my-3" data-aos="fade-in" data-aos-delay="600">
+                    <div class="col-sm-6 my-1" data-aos="fade-in" data-aos-delay="600">
                         <a class="contact-link" href='https://github.com/Rasith26' style={{paddingLeft: "40px", paddingRight: "40px"}}>
                             <img src={GitHub} class="rounded" alt="GitHub" style={{width:"30px", height: "30px"}}/>
                             GitHub
                         </a>
                     </div>
-                    <div class="col-sm-6 my-3" data-aos="fade-in" data-aos-delay="1200">
+                    <div class="col-sm-6 my-1" data-aos="fade-in" data-aos-delay="1200">
                         <a class="contact-link" href='https://www.linkedin.com/in/mohamed-rasith-b47565247' style={{paddingLeft: "32px", paddingRight: "32px"}}>
                             <img src={LinkedIn} class="rounded" alt="GitHub" style={{width:"30px", height: "30px"}}/>
                             LinkedIn
@@ -108,13 +108,13 @@ const Content = () => {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 my-3" data-aos="fade-in" data-aos-delay="1800">
+                    <div class="col-sm-6 my-1" data-aos="fade-in" data-aos-delay="1800">
                         <a class="contact-link" href='https://www.instagram.com/rashith__26/' style={{paddingLeft: "25px", paddingRight: "25px"}}>
                             <img src={Instagram} class="rounded" alt="GitHub" style={{width:"30px", height: "30px"}}/>
                             Instagram
                         </a>
                     </div>
-                    <div class="col-sm-6 my-3" data-aos="fade-in" data-aos-delay="2400">
+                    <div class="col-sm-6 my-1" data-aos="fade-in" data-aos-delay="2400">
                         <a class="contact-link" href='mailto:rashithks@gmail.com' style={{paddingLeft: "40.5px", paddingRight: "40.5px"}}>
                             <img src={Gmail} class="rounded" alt="GitHub" style={{width:"40px", height: "30px"}}/>
                             Gmail

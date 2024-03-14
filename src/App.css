@@ -41,7 +41,7 @@ nav div ul li a.active {
   right: 10px;
   bottom: 50px;
   margin-top: auto;
-  color: rgba(9,67,214,0.8);
+  color: white;
   border-radius: 10px;
   border: none;
   width: 50px;
@@ -49,11 +49,11 @@ nav div ul li a.active {
   align-items: center;
   justify-content: center;
   padding: 5px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(9,67,214,0.7);
   cursor: pointer;
 }
 .backtotop:hover {
-  background-color: rgba(255,255,255,0.3);;
+  background-color: rgba(9,67,214,0.6);
 }
 
 .hidden {
@@ -86,6 +86,8 @@ nav div ul li a.active {
 }
 
 
-@media (max-width: 500px) {
-  
-}
+/* @media (max-width: 1000px) {
+  .backtotop {
+    display: none;
+  }
+} */

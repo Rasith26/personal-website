@@ -6,7 +6,7 @@ const Content = () => {
     <div>
       <div class="container-fluid">
         <div class="container d-flex align-items-center justify-content-center">
-          <img src={Childhood} class="im rounded" alt="Native" data-aos="fade-right" data-aos-delay="500"/>
+          <img src={Childhood} class="im rounded" alt="Native" data-aos="fade" data-aos-delay="500"/>
         </div>
         <div class="container">
           <h1 data-aos="fade-up">Childhood</h1>
@@ -31,12 +31,12 @@ const Content = () => {
           </p>
         </div>
         <div class="container d-flex align-items-center justify-content-center" >
-          <img src={School} class="im rounded" alt="School" data-aos="fade-left" data-aos-delay="500"/>
+          <img src={School} class="im rounded" alt="School" data-aos="fade" data-aos-delay="500"/>
         </div>
       </div>
       <div class="container-fluid">
         <div class="container d-flex align-items-center justify-content-center">
-          <img src={College} class="im rounded" alt="College" data-aos="fade-right" data-aos-delay="500"/>
+          <img src={College} class="im rounded" alt="College" data-aos="fade" data-aos-delay="500"/>
         </div>
         <div class="container">
           <h1 data-aos="fade-up">College</h1>
@@ -58,7 +58,7 @@ const Content = () => {
           </p>
         </div>
         <div class="container d-flex align-items-center justify-content-center">
-          <img src={Work} class="im rounded" alt="Work" data-aos="fade-left" data-aos-delay="500"/>
+          <img src={Work} class="im rounded" alt="Work" data-aos="fade" data-aos-delay="500"/>
         </div>
       </div>
     </div>

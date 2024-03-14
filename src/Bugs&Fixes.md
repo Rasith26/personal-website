@@ -239,20 +239,15 @@ ANIMATIONS:
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  border: 2px solid rgba(33, 95, 253, 1);
-  border-bottom: 0;
-  border-right: 0;
-  border-top: 0;
+  border-left: 2px solid rgba(33, 95, 253, 1);
   right: -8px;
   animation: cursor .8s infinite, typing 6s infinite;
   background-color: black;
 }
+//cursor blink effect
 @keyframes cursor {
   to {
-    border: 2px solid rgba(33, 95, 253, 0);
-    border-bottom: 0;
-    border-right: 0;
-    border-top: 0;
+    border-left: 2px solid rgba(33, 95, 253, 0);
   }
 }
 @keyframes typing {
